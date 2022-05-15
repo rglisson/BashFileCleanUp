@@ -10,7 +10,7 @@
 - I used Visual Studio Code to run the HCL script to deploy infrastructure to AWS.
 - You will need to create a keypair on AWS and put it in the same folder as your .tf file. This will be used to automatically ssh & run your scripts on the EC2 instance.
 
-![](img/keypair.PNG)
+![](img/keypair.png)
 
 # Script
 - Create a .tf file. First you'll need to input your access keys and EC2 instance information. This is where you will type in the name of the keypair. On your default security group, open up port 22 so that you can SSH into the instance. 
@@ -21,7 +21,7 @@
 - I added the cronjob manually. I had to ssh into the server and execute one line: (crontab -l ; echo "*/1 * * * * /bin/bash fileClean.sh") | crontab - 
 - Normally this would be setup in AWS on something like Lambda so that the cronjob could be used on any server.
 
-![](img/script.PNG)
+![](img/script.png)
 
 
 # Run Script
