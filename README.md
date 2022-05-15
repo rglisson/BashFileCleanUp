@@ -1,6 +1,6 @@
 # Bash File CleanUp Demo
 
-![](/img/terraform.PNG)
+![](img/terraform.png)
 
 # Introduction & Goals
 - The goal of the project was to use infrastructure-as-Code to create an ec2 instance, a sample file that would host the location of an application, and a bash cleanup script that can be called through a cronjob.
